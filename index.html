@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Video Chat App</h1>
+
+    <!-- Create Room Section -->
+    <button id="createBtn">Create Room</button>
+
+    <!-- Join Room Section -->
+    <input type="text" id="roomInput" placeholder="Enter room ID" />
+    <button id="joinBtn">Join Room</button>
+    
+    <div id="videoContainer" class="hidden">
+        <h2>Video Chat</h2>
+        <video id="myVideo" autoplay muted></video>
+        <video id="peerVideo" autoplay></video>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
